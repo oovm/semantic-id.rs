@@ -1,13 +1,13 @@
 [package]
-name = "sub_projects"
+name = "candle-srcnn"
 publish = false
 version = "0.0.0"
 authors = ["Aster <192607617@qq.com>"]
 description = "..."
 categories = ["rust-patterns"]
 homepage = "https://github.com/oovm/RustTemplate"
-repository = "https://github.com/oovm/RustTemplate"
-documentation = "https://docs.rs/sub_projects"
+repository = "https://github.com/oovm/candle-ssr/tree/dev/projects/candle-srcnn"
+documentation = "https://docs.rs/candle-srcnn"
 readme = "readme.md"
 license = "MPL-2.0"
 edition = "2021"
@@ -16,6 +16,8 @@ exclude = ["package.json", "tests/**"]
 [dependencies]
 candle-core = "0.4.1"
 candle-nn = "0.4.1"
+#candle-onnx = "0.4.1"
+
 
 [dev-dependencies]
 
