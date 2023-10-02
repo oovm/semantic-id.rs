@@ -2,7 +2,7 @@
 resolver = "2"
 members = ["projects/*"]
 default-members = [
-    "projects/candle-srcnn",
+    "projects/semantic-id",
 ]
 exclude = [
     "projects/.DS_Store",
