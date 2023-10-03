@@ -13,12 +13,12 @@ pub struct GenerateState16 {
 
 impl Default for GenerateState16 {
     fn default() -> Self {
-        let machine_id = match std::env::var("CLEVER_WORKER_ID") {
+        let machine_id = match std::env::var("MACHINE_ID") {
             Ok(o) => {
                 let id = u64::from_str_radix(o.as_str(), 10).expect("`MACHINE_ID` must be a integer");
                 (id % 0x100) as u8
             }
-            Err(_) => rand::thread_rng().random::<u8>(),
+            Err(_) => rand::rng().random::<u8>(),
         };
         Self { machine_id, sequence: 0 }
     }
